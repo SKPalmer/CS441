@@ -19,3 +19,8 @@ void homescreen::on_pushButton_clicked()
 {
     m_pMainWindow->show();
 }
+
+void homescreen::on_tabWidget_currentChanged(int index)
+{
+
+}

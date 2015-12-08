@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addCourse</class>
+ <widget class="QDialog" name="addCourse">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>7</y>
+     <width>586</width>
+     <height>473</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Course Information:</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_basicInfo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>34</y>
+      <width>544</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Basic Info:</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>21</y>
+       <width>428</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_20">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="courseNumberLabel">
+            <property name="text">
+             <string>Course Number: *</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="courseNameLabel">
+            <property name="text">
+             <string>Course Name:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_courseNumber"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_courseName"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="locationLabel">
+            <property name="text">
+             <string>Location:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="instructorLabel">
+            <property name="text">
+             <string>Instructor:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_location"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_instructor"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_daysTimes">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>136</y>
+      <width>300</width>
+      <height>286</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Schedule:</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>62</y>
+       <width>281</width>
+       <height>213</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Days:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Start:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>End:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Sunday">
+          <property name="text">
+           <string>Sunday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_SunStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_SunEnd"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Monday">
+          <property name="text">
+           <string>Monday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_MonStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_MonEnd"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Tuesday">
+          <property name="text">
+           <string>Tuesday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_TuesStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_TuesEnd"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Wednesday">
+          <property name="text">
+           <string>Wednesday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_WedStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_WedEnd"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Thursday">
+          <property name="text">
+           <string>Thursday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_ThursStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_ThursEnd"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Friday">
+          <property name="text">
+           <string>Friday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_FriStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_FriEnd"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QCheckBox" name="checkBox_Saturday">
+          <property name="text">
+           <string>Saturday</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_SatStart"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_SatEnd"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>23</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Select Days of week and times that this class meets.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_grading">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>136</y>
+      <width>232</width>
+      <height>286</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Grading: *</string>
+    </property>
+    <widget class="QCheckBox" name="checkBox_pointBased">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>154</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Courses bases solely on points.</string>
+     </property>
+     <property name="text">
+      <string>Point Based</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_weighted">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>46</y>
+       <width>228</width>
+       <height>238</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Courses with weighted (%) categories.</string>
+     </property>
+     <property name="title">
+      <string>Weighted</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <widget class="QSplitter" name="splitter">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>18</y>
+        <width>187</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Category</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>40</y>
+        <width>213</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QCheckBox" name="checkBox_category1">
+           <property name="text">
+            <string>1   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_category2">
+           <property name="text">
+            <string>2   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_category3">
+           <property name="text">
+            <string>3   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_category4">
+           <property name="text">
+            <string>4   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_category5">
+           <property name="text">
+            <string>5   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_category6">
+           <property name="text">
+            <string>6   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_category7">
+           <property name="text">
+            <string>7   </string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category2"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category3"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category4"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category5"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category6"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_category7"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QSpinBox" name="spinBox_category1">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_category2">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_category3">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_category4">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_category5">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_category6">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_category7">
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <zorder>groupBox_weighted</zorder>
+    <zorder>checkBox_pointBased</zorder>
+   </widget>
+   <widget class="QLabel" name="requiredLabel">
+    <property name="geometry">
+     <rect>
+      <x>436</x>
+      <y>-1</y>
+      <width>134</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>* indicates a required field</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>434</y>
+      <width>357</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_17">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="saveCourses">
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cancelCourses">
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="errorLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>+ERROR</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>layoutWidget_4</zorder>
+   <zorder>groupBox_basicInfo</zorder>
+   <zorder>groupBox_daysTimes</zorder>
+   <zorder>groupBox_grading</zorder>
+   <zorder>requiredLabel</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

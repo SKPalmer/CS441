@@ -1,0 +1,41 @@
+System Requirements Specification
+
+1. Introduction
+
+1.1 Purpose
+This document describes the background of the student organization program. The basic flow of the program will be described in a use case format
+
+1.2 Background
+Students who need a personal organizer that keeps track of course grades, assignments, and tasks that need to be done. 
+
+2. System Requirements
+
+2.1 Actor
+Student
+
+2.2 High level Flow
+To use this program, a student will need to have access to a PC. As the student enters tasks, courses, and grades, they will be pushed into a database. The student will be able to edit entries as needed and database will update for changes.
+
+2.3 Basic use cases
+
+2.3.1 Open Application
+	2.3.1.1 Prompted with login
+	2.3.1.1 Registration page (unless already a user)
+		2.3.1.2 User creates account
+
+2.3.2 Calendar
+	2.3.2.1 Calendar will display days of month/ year
+	2.3.2.2 Allows user to enter events/ tasks on specific dates
+	2.3.2.3 Allows Notifications to be set
+
+2.3.3 Gradebook
+	2.3.3.1 User enters different classes into planner
+	2.3.3.2 Enter different categories for weighted grades
+	2.3.3.3 Enter grades for assignments / exams
+		2.3.3.3.1 Gradebook keeps track of a running total
+
+2.3.4 To-do list
+	2.3.4.1 User enters tasks to be completed with due date
+	2.3.4.2 Ability to edit entries already in list
+	2.3.4.3 Change status of tasks if completed or not
+	2.3.4.4 Loads separate lists of tasks completed or not
